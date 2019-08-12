@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:id="@+id/tabquest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:layout_marginRight="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:hint="Key"
+                    android:ems="10"
+                    android:id="@+id/man_key" />
+
+                <TableRow
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/man_check"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/right_arrow"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp" />
+
+                </TableRow>
+            </RelativeLayout>
+        </TableRow>
+
+        <TableRow
+            android:visibility="gone"
+            android:id="@+id/tabans"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_marginRight="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/man_text"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="10dp"
+                    android:gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/man_copy"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/copy"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp" />
+
+                </TableRow>
+            </RelativeLayout>
+
+        </TableRow>
+
+    </TableLayout>
+</RelativeLayout>

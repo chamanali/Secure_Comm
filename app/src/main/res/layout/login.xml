@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginray"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:textColor="@color/colorPrimaryDark"
+            android:typeface="serif"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:text="Login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView" />
+    </TableRow>
+
+    <TableLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/user"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email" />
+            </android.support.design.widget.TextInputLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorPrimary"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/pass"
+                    android:singleLine="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password" />
+            </android.support.design.widget.TextInputLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:id="@+id/signin"
+                android:text="Sign In"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:text="Sign Up"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/signup" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:text="Rovel Pinto"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favli_name" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="9773119062"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favli_no" />
+    </LinearLayout>
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/favli_remove"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/remove"
+            android:layout_width="25dp"
+            android:layout_height="25dp"/>
+
+    </TableRow>
+
+</RelativeLayout>
